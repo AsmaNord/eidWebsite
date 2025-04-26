@@ -27,7 +27,7 @@ A dynamic web application to enhance your Eid celebration experience with intera
 - Beautiful Islamic-themed design elements
 
 ## 🚀 Live Demo
-
+https://asmanord.github.io/eidWebsite/
 
 ## 🛠️ Technologies Used
 - HTML5
