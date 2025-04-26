@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #e0f7fa;
+    background-image: url(sahara.jpg);
+    font-family: Arial, sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    background-size: 100vw 100vh; /* So all the image can be seen */
+}
+
+/* Navbar */
+.nav-bar {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 60px;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    background: linear-gradient(180deg, rgba(27, 39, 53, 0.9) 0%, rgba(9, 10, 15, 0.9) 100%);
+    z-index: 3;
+}
+
+/* Ensure li elements are displayed correctly */
+.nav-bar li {
+    margin: 0 10px; /* Adds spacing between nav items */
+    list-style: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Style for anchor links */
+.nav-bar li a {
+    text-decoration: none;
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
+    color: #f8f8f8;
+    padding: 10px 15px; /* Ensures clickable area */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px; /* Serves in the hover effect */
+  }
+
+.nav-bar li a:hover {
+    background: #B53BE6;
+    color: #0D1017;
+}
+
+.nav-bar li:nth-child(3){
+    margin-right: 30px;
+}
+
+/* Hadith Generator */
+.container {
+    width: 680px;
+    background: rgba(27, 39, 53, 0.9);
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 0 100px #16172C;
+    margin-top: 80px;
+    color: #E4DFE1;
+    margin-bottom: 100px;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: bold;
+    color: #D78C2C;
+    font-family: cursive, serif; 
+}
+
+.content {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hadiith {
+    font-size: 20px;
+    margin-bottom: 15px;
+    font-family: cursive; 
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.feature {
+    display: flex;
+    gap: 10px;
+}
+
+.newb, .sound, .stop {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.newb {
+    background: linear-gradient(45deg, #A65207, #D78C2C);
+    color: #0D1017;
+    font-size: 16px;
+    font-weight: bolder;
+}
+
+.newb:hover {
+    background: rgb(14, 18, 23);
+    transition: 0.5s;
+    color: #E4E2E1;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* To centralize the hadith container */
+    align-items: center;
+}
